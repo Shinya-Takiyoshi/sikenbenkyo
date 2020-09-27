@@ -4,3 +4,11 @@
 
 ■protected
 パッケージ制限無し
+
+■array.clone
+複製コピーされただけで、コピー元に影響はない。
+int[] array = {2,3,4}
+int[] array2 = array.clone();
+array2[0] = 5;
+array[0] // 2(変更無し)
+
