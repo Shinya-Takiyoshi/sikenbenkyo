@@ -1,0 +1,19 @@
+■独自の例外クラスを使用した例外処理
+OriginalException(独自の例外クラス)
+　RuntimeExceptionでcatchしようとたが、チェックされない例外なので不要。
+
+■オーバーロードメソッドの呼び出し
+boolean	Boolean	基本型への変換不可
+char	Character	int、long、float、double
+byte	Byte	short、int、long、float、double
+short	Short	int、long、float、double
+int	Integer	long、float、double
+long	Long	float、double　//今回出た問題
+float	Float	double
+double	Double	基本型への変換不可
+基本的にfloatとdoubleには変換できる。
+
+■whileの条件式として扱えるか問題
+num = 1 //代入なので✖︎
+num == 2?1:0 //三項演算子の代入✖︎
+compareToの戻り値はint型なので✖︎
