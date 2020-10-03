@@ -1,0 +1,9 @@
+■countinue
+以降の処理を飛ばして次の繰り返しに移る。
+■例外処理
+そのExceptionがスローされる可能性があるかどうか。
+throwsかcatchの処置が必要。
+RuntimeExceptionは例外処理が任意(非検査例外)
+非検査例外
+　・Errorクラスとその配下
+  ・RuntimeException
