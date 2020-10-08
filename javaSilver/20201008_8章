@@ -1,0 +1,52 @@
+■例外処理
+catchは受け取ると正常終了する。catch自体は動作する。
+■try-catch-finally
+順番は必ず守る。
+守れない場合はコンパイルエラーになる。
+■try-catch-finally(returnを挟む場合)
+catch(Exception e){
+return "A";　//②
+}finally{
+ Sytem.out.print("B"); //①
+}
+finallyは必ず実行される。
+実行されてから呼び出し元に戻る。
+
+■catchとfinallyがreturnで戻す場合
+「どちらの値を戻されるか？」
+catch(Exception e){
+return "A";　//①
+}finally{
+ return "B; //②
+}
+上から順番に処理されるので、最終的にfinallyの値が戻される。
+
+■2つのtry-catchがネストしている問題
+「どっちのtryを受け取るか？」
+→近い方を受け取る。
+finallyは必ず実行されるため、外にもfinallyがある場合は実行される。
+
+■検査例外と非検査例外
+非検査例外
+　Error,Exception,RuntimeException,RuntimeExceptionのサブクラス
+検査例外
+　Exceptionのサブクラス
+ 
+ ■エラーの知識
+ ・エラーは例外処理を記述できる。
+ ・Errorの継承が必要。
+ ・エラーは実行環境の例外の時にスローされる。
+ ・throwsで宣言する必要は無い。
+ 
+ ■Listのエラー
+ ・indexOutBoundException
+ 
+ ■クラスのキャストと例外クラス
+ 文法上問題ないので実行時にエラー
+ 
+ ■例外クラス char→String
+ char→Stringに変換した場合
+ 変換　○
+ 数字が何らかの文字に変換される。
+ そのため、文字から数字に戻せない→エラー。
+ 
