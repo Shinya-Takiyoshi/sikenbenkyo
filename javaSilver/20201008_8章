@@ -50,3 +50,18 @@ finallyは必ず実行されるため、外にもfinallyがある場合は実行
  数字が何らかの文字に変換される。
  そのため、文字から数字に戻せない→エラー。
  
+ ■staticイニシャライザ
+ JVMで実行時呼び出し。
+ 変数nameが初期化されてないので値はnull
+ ↓
+ ①nullのオブジェクトから、lengthで取り出そうとしているので、NullPointerExceptionが発生する。
+ ↓
+ ②Exceptionをstaticから拾ったJVMは、ExceptionInInitializerExceptionを発生させる(staticイニシャライザ内で起きるエラー)
+ 
+ ■例外クラスの問題
+ 同じメソッドを呼び出し続ける。
+ 「再起呼び出し」
+ ↓
+ スタック領域が不足する。
+ ↓
+ StackOverflowError
