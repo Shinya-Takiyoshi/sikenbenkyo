@@ -1,0 +1,21 @@
+リレーショナルデータベースとSQL
+1. 主キーはNULL値を含めることができない
+2. 外部キーはNULL値を含めることができる
+
+SQLの概要
+1. DML
+2. DDL
+3. DCL
+4. トランザクション制御
+
+DML(データ操作言語)
+* 主に、データの問い合わせ操作
+* SELECT,INSERT,UPDATE,DELETE,MERGE
+DDL( データ定義言語)
+* テーブルへの操作
+* CREATE,ALTER,DROP,RENAME,TRUNCATE,COMMENT
+DCL( データ制御言語)
+* 権限操作
+* GRANT,REVOKE
+トランザクション制御
+* COMMIT,ROLLBACK,SAVEPOINT
