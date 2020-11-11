@@ -1,0 +1,22 @@
+6章
+グループ関数
+■DISTINCT,ALLを指定しなかった場合
+・デフォルトはALL
+■行のグループごとに1つの結果を戻す
+■NULL値は無視して計算される
+■グループ関数が使用できる句
+・Select句
+・Having句
+・Order By句
+■位置指定　
+・Order By 位置指定　OK
+・Group By 位置指定　NG
+■グループ関数の最大ネスト
+・2レベル
+■LISTAGG
+・構文の形
+　LISTAGG(,デリミタ) WITHIN GROUP()
+■数値以外でも使用可能
+・COUNT
+・MAX
+・MIN
