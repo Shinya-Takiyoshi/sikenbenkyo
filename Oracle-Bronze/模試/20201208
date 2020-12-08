@@ -1,0 +1,24 @@
+■SQL行制限
+ROW ONLY 10 // 10位までのデータ
+ROWS 10 WITH TIES // 10位以降で、10位以内と同じデータが合った場合も拾う
+・ONLYとWITH TIESは同時に使えない。
+・FETCHの後に、FIRST or NEXTが必要
+■セーブポイント
+・ROLLBACKに対して使用できる。
+・DMLに対して使用できる。
+　(DDLは1文コミットのため)
+■置換変数
+& // 毎回入力
+&&　// 初回入力、2回目以降は初回の定義で実行
+■NULLIF
+NULLIF(1,2) 
+ 1 == 2 の場合　NULL
+ 1 <> 2 の場合　1
+■NVL2
+NVL2(1,2,3)
+ 1 <> NULL の場合　2
+ 1 == NULL の場合　3
+■MONTHS_BETWEEN
+日付間の月数
+■USING
+
