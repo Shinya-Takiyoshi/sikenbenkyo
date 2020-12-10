@@ -16,3 +16,4 @@
 ・HAVINGはWHERE句と一緒に指定できる。
 ■WHERE
 ・グループに分割する前に行制限ができる。
+・優先度　WHERE > HAVING
