@@ -1,0 +1,18 @@
+■update文の副問い合わせ
+副問い合わせで取得してきた列しかupdate文内で使用できない。
+■グループ関数
+・COUNT,MIN,MAX →数値、日付、文字データ
+・AVG,SUM　→数値のみ
+・グループ関数の条件指定はHAVINGで使用する、WHEREでは使用できない。
+■NATURAL JOIN
+結合列は表別名で使用できない。
+■LISTAGG
+構文
+　 LISTAGG()
+    WITHIN GROUP(ORDER BY)
+■HAVING
+・HAVINGとGROUP BYでは順番を気にしない。
+・HAVINGで使用した列はSELECT句で連動していない。
+・HAVINGはWHERE句と一緒に指定できる。
+■WHERE
+・グループに分割する前に行制限ができる。
