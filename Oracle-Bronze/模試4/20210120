@@ -1,0 +1,28 @@
+■複合主キー
+・主キーを列レベルで２つ定義するとエラー
+・定義するときに行中でカンマで定義を区切るとエラー(正しくは半角スペース)
+・constraitはNOT NULL制約を定義できない(正しくは列レベルで定義できる)
+■汎用関数
+・データ型は一緒
+・CASE式では戻り値のデータ型は一緒
+■外部キーの親キー削除
+・DELETE文にCASCADEオプションは無い。
+・ON DELETE CASCADEは外部キーに対して設定ができる。
+■データ型変換関数の使い方
+・to_numberのデフォルト書式に桁区切り(,やGなど)は存在しないためエラーになる。
+・TIMESTAMP型の列はTO_DATEではなくTO_TIMESTAMPが正しい
+■CREATE TABLEのデフォルト値
+・文字データはシングルクオーテーション
+・文字→日付に暗黙変換できる値かどうか
+・CLOBはサイズ指定NG
+■UNION演算子
+・種類：UNION/INTERSECT/MINUS
+・重複チェックの際、NULLは無視されない。
+■指定項目の一致
+①GROUP BY句とSELECT句で項目の値の一致
+②GROUP BY句とORDER BYT句で項目の値の一致
+ select to_char(date,'YY')
+ group by to_char(date,'YYYY')
+ order by to_char(date,'YY')
+ //　全部指定書式は一致させる必要がある。しない場合、エラーになる。
+
