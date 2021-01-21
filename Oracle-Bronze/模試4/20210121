@@ -26,7 +26,7 @@
 ・NULLIFか
  NULL指定できない。
 ・NULLIF以外か
- NULL指定できない。
+ NULL指定できる。
 ■外部キーの親キーの削除
 ・ON DELETE CASCADEが設定されている場合削除できる
 ■SQL行制限
