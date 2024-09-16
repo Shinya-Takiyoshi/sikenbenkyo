@@ -1,0 +1,37 @@
+■Files_API/Linesメソッド
+戻り値はStream型
+https://docs.oracle.com/javase/8/docs/api/java/nio/file/Files.html#lines-java.nio.file.Path-
+戻り値はList型
+https://docs.oracle.com/javase/8/docs/api/java/nio/file/Files.html#readAllLines-java.nio.file.Path-
+この問題が固有で出題されるわけではないため、メソッド名で予測する力をつけることが必要。
+
+■ServiceLoader
+ServiceLoaderはIterableインタフェースが実装されている。
+そのため、ServiceLoaderクラスだけでfor文を回せる。
+
+■Comparatorインターフェース
+Comparatorはcompareメソッドを実装するもの。
+戻り値は比較した結果でint型で-1,0,1がありうる。
+あらかじめ型パラメータの指定が必要。
+
+■ボクシングの知識
+ラッパー型とプリミティブ型同士でしか変換はできない。
+つまり、下記はNG。
+ラッパー型とラッパー型
+プリミティブ型とプリミティブ型
+一回ofメソッドなどで経由するのはOK
+
+■implementsのルール
+メソッド名が被った場合
+継承、実装したクラスでのメソッドが適用される。
+強さ関係：
+・デフォルト < 実装クラス
+デフォルト < 実装クラスにおいてアクセス修飾子を狭めることはできない。
+この確認はコンパイル時は気づかない。
+実行時で初めて検出される。
+
+■try-with-resources
+基本はtryで宣言したリソースが閉じた後closeメソッドが処理される。
+しかし、closeメソッドでも例外が起きた場合にはtryで定義された例外が適用される。
+
+
