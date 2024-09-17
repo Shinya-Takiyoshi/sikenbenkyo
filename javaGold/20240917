@@ -1,0 +1,20 @@
+■streamの話
+item -> ((Item)item).getPrice()はOK
+(Item item) -> item.getPrice()はNG
+Streamの時点でItem型が定まっていないため、暗黙的に変換することはできない。
+Stream<Item>とするかのどっちか
+
+■ReadPassword
+入力した文字を隠す(パスワードだから見られたくないからね)
+https://docs.oracle.com/javase/jp/8/docs/api/java/io/Console.html#readPassword--
+ReadPassword内で隠すわけであり、そのあとは文字列扱いのため表示される。
+
+■Runnable
+アロー関数とメソッドの処理に注目。
+アロー関数:　()->
+メソッドの処理： {System.out::print("")}
+
+
+
+
+
