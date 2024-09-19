@@ -1,0 +1,29 @@
+■インターフェースと抽象クラス
+インターフェース
+1.インスタンスを生成できない
+2.staticメソッドを定義できる
+3.public,privateメソッドだけ
+4.finalで定義できない
+5.実装メソッド定義できる
+
+抽象クラス
+1.インスタンスを生成できる
+2.staticメソッドを定義できる
+3.どのアクセス修飾子でもOK
+4.finalで定義できる
+5.実装メソッド定義できる
+
+■normalize()
+無駄なパスの排除をする
+https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html#normalize--
+(a/b/c/../../d)
+上記に対応した構造。つまりaの中のdである。
+a-b-c
+ |- d
+ normalize後
+ (a/d)
+
+ ■継承関係のある例外クラス
+ TestExceptionでsuperで呼び出しているからSampleExceptionが呼び出される
+ その時点でSampleExceptionがcatchされるという流れだ。
+
