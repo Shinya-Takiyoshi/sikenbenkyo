@@ -1,0 +1,30 @@
+■変更可能不可能リスト
+1.List：変更不可能リスト
+ addしたらエラーになります。
+2.ArrayList：変更不可能リスト
+
+■上限/下限　境界ワイルドカード
+読み方：
+上限境界ワイルドカード
+    <? super 下> = <上>
+    <? super A> = <B>
+    <? super Short> = <Number>
+        Number superクラス　上
+        Short　extends定義クラス　下
+下限境界ワイルドカード
+    <? super 上> = <下>
+    <? super B> = <A>
+    <? extends Number> = <Byte>
+        Number superクラス　上
+        Byte　extends定義クラス　下
+
+■ReentrantLock
+lock()でロックをする
+unlock()でロックを解除する
+これによりスレッドセーフな状態を実現。
+フィールドで保持することで複数にまたがってインスタンス参照ができる。
+
+
+
+
+
