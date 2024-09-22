@@ -1,0 +1,39 @@
+■データベースのURL
+sql/ip/port/データベース名
+httpから始まることはあり得ない
+
+■整数のオートボクシング
+整数のデフォルトはint型である。
+intはIntegerにそのまま変換できる。
+intにLをつけるとlongとして認識できる。
+
+■stream処理
+filterはboolean型を返す
+collectは終端処理なので最後が必須。
+
+■averageメソッドの実在有無を考える
+正解：
+    1.Collectの中にはそういうメソッドがある。
+    2.mapToIntしているからintに対してのaverage()
+不正解：
+    3.Stream自体にaverageは存在しない
+    4.averageにparallel機能はない
+
+■戻す形は合っているか？
+Optional型を戻さない：
+    amyMatch：boolean型
+    filter:boolean型
+Optional型を戻す：
+    findAny:Optional型
+
+■Radom.nextInt
+インスタンスメソッドです。    
+■IntStream
+インターフェースなのでnewできない
+■IntStream.generate
+staticなので、インスタンス生成なしに呼べる。
+引数にインスタンスメソッドを渡す必要がある。
+https://docs.oracle.com/javase/jp/8/docs/api/java/util/stream/IntStream.html#generate-java.util.function.IntSupplier-
+■IntStream.iterate
+staticなので、インスタンス生成なしに呼べる。
+https://docs.oracle.com/javase/jp/8/docs/api/java/util/stream/IntStream.html#iterate-int-java.util.function.IntUnaryOperator-
