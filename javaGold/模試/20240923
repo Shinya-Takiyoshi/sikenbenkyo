@@ -1,0 +1,15 @@
+■クラス呼び出しのエラーの話
+1.staticにすることにより、インナークラスはエンクロージクラスを呼び出さなくて良い
+2.インナークラスをやめて、別のクラスとして置くことでエンクロージクラスを呼び出さなくて良い
+
+■mapToInt
+map：reduce
+mapToInt:IntStream型のためreduceがない、その代わりsumなどが使える
+
+■Consumer
+消費者。メソッドを実行するだけ。引数は渡さない。
+Consumer a = System.out::print
+引数を渡すならジェネリクス定義が必須
+Consumer<String> a = str -> str.length
+
+
