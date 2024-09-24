@@ -1,0 +1,21 @@
+■switch
+caseとしてTypeインスタンスを指定された場合
+enumの定義を直接指定できる。
+Type A,B,C
+const Type type = Type.A
+case A:
+
+■デフォルトのロケール
+第一引数にlocaleの参照またはカテゴリがあるかどうか
+文字列で指定は間違い。
+
+■forEachOrded
+順番制御できる
+
+■Compareble
+Comparetorとの違い
+Comparetor：比較機能を持たないオブジェクトに比較機能を持たせる
+    メソッド：compare 引数2
+Compareble：ソートなどで比較されるオブジェクトに比較機能を持たせる
+    メソッド：compareTo 引数1
+
