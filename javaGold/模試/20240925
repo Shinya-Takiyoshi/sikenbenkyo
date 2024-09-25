@@ -1,0 +1,26 @@
+■Files.move
+a/sample→dest
+で移動すると見せかける
+実際は
+a/sampleをdestで上書きしようとするため
+すでにdestは存在するというExceptiondが発生する
+
+■SPI
+module構造：
+api→provider
+api→client
+
+clientでusesで公開しているapi
+providerでもapiを利用しおり公開していないため
+公開しているclientでproviderをrequire(要求)する必要がある。
+provider ~ with　= withのexportsが必要。
+
+
+■ToDoubleFunction
+プリミティブのdouble型を戻す
+
+■コンストラクタがない場合
+自動でデフォルトコンストラクタが追加されるためエラーにならない
+
+■関数型インターフェースの特徴
+抽象メソッドを一つだけ持つ
