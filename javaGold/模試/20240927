@@ -1,0 +1,5 @@
+■安全にシリアライズしたい時
+・serialPersistentFields
+・transientをつける
+
+readとwriteはシリアライズに必要なもの
