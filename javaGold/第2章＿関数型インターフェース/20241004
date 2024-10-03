@@ -1,0 +1,3 @@
+■UnaryOperator
+Biになっても管理する引数は一つ。Functionとは違う。
+Listの内容を一括で対応できる。例えばList.replaceAllとかもnaryOperator
