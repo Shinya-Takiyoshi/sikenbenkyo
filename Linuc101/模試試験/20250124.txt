@@ -1,0 +1,16 @@
+■apt-get updateの次は？
+apt-get upgrade
+■パッケージ一覧 by apt
+apt list
+■依存関係
+depends
+■設定ミスによるプログラムの再実行
+dpkg-reconfigure
+■yumのグループインストール
+yum group install
+■リポジトリ設定ファイルどこに置く？
+/etc/yum.repos.d
+■ハードウェアデバイスの調査コマンド
+要はlsが強調されているコマンド。
+lspci
+lsusb
