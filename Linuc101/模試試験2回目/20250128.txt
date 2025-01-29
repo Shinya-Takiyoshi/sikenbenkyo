@@ -1,0 +1,13 @@
+■パーミッション問題
+lrxrxはシンボリックリンクのパーミッション。
+Permission deniedだからアクセス権の問題
+→書き込めなかった。
+■コマンドのパスとmanページ表示
+whereisコマンド
+■バッククオーテーションで囲んだ場合の結果
+`pwd`の場合に、　pwdの実行結果になる
+pwdの実行結果が/etcなら
+`pwd`= /etcとなる。
+■bashのコマンド履歴
+格納先：bash_history
+変数名：HISTFILE
