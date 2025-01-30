@@ -1,0 +1,6 @@
+■デフォルトのエディターの環境変数
+EDITOR
+■apt-getシステムの最新化
+updateの後に実施するのがupgrade
+もっと広い意味での最新化はdist-upgrade
+今回はapt-get upgradeの使い方を重視。
