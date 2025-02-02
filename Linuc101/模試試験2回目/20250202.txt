@@ -1,0 +1,12 @@
+■カーネルモジュールのロード
+insmod
+modprobe(依存関係も解決できる)
+■パーティション作成削除コマンド
+gdisk
+fdisk
+parted
+pdiskは存在しない。
+■ext4ファイルシステムでデバイスファイル(dev/sda3等)を作成したい
+mkfs -t ext4
+mkfs.ext4
+注意：mke4ksなどのシリーズはコマンドとして使わない。
