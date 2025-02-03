@@ -1,0 +1,4 @@
+■killの話
+kill -s シグナル指定
+killall シグナル指定
+注意：killallは-sオプションつけない。
