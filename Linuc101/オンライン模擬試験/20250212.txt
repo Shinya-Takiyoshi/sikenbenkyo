@@ -1,0 +1,23 @@
+■システム起動時においてのカーネルの説明
+①カーネルは起動されると、高度にハードウェアを認識・制御し、ルートファイルシステムのマウントなど様々な初期化処理を行う
+②initプロセスから/sbin/initを起動される
+■キーボード、マウスなどが属しているUSBのデバイスクラス
+HID(Human Interface Devices)
+■dpkgコマンド インストールされたファイルを一覧表示(listfiles大文字)
+dpkg -L ssh
+dpkg --listfiles ssh
+■dpkgコマンド　パッケージの詳細情報を表示(status小文字)
+dpkg --status ssh
+dpkg -s ssh
+■dpkgコマンド　ファイルのインストール元パッケージを表示(search大文字)
+dpkg -S /usr/share/doc/ssh
+dpkg --search /usr/share/doc/ssh
+
+■apt-getコマンド パッケージをアンインストール(remove)
+apt-get remove apache2
+■apt-cacheコマンド 含むパッケージを表示(search)
+apt-cache search ssh
+■apt-cacheコマンド パッケージへ依存しているパッケージを含めた詳細情報を表示(showpkg)
+apt-cache showpkg ssh
+
+rpm:19から続き
