@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>viエディタの操作_保存編</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        .button-container {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px; /* ボタンの間に余白を追加 */
+        }
+
+        .button-container button {
+            padding: 15px 30px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            width: 200px; /* ボタンの幅を指定 */
+        }
+
+        /* 左のボタン */
+        .left {
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        /* 右のボタン */
+        .right {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    </style>
+</head>
+<body>
+<div class="button-container">
+    <!-- 左上にボタンを縦に並べる -->
+    <div><button onclick="buttonClick('エディタを終了することなく保存したい')">:w</button></div>
+    <div onclick="buttonClick('変更内容を保存しエディタを終了したい')"><button id="top2">ZZ</button>
+        <button id="top4">:wq</button>
+        <button id="top5">:wq!</button>
+        <button id="top6">:x</button></div>
+    <div onclick="buttonClick('現在編集しているファイルを閉じて、別のファイルを開きたい')"><button id="top7">:e!</button><button id="top3">:e</button></div>
+    <div><button onclick="buttonClick('カーソルのある行を含めて5行を切り取り、バッファにコピー')">5dd</button></div>
+    <div><button onclick="buttonClick('カーソルの左にバッファの内容を貼り付ける|行の場合はカーソルの上に挿入')">P</button></div>
+    <div><button onclick="buttonClick('カーソル位置の文字を削除する')">x</button></div>
+</div>
+
+<script>
+    function buttonClick(msg){
+     alert(msg);
+    }
+</script>
+</body>
+</html>
