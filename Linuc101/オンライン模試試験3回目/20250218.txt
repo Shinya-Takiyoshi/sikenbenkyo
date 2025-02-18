@@ -1,0 +1,3 @@
+■findコマンド 検索するディレクトリの階層数を指定
+-mindepth
+-maxdepth
