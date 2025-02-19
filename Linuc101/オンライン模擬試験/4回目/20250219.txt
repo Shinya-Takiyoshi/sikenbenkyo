@@ -97,3 +97,12 @@ mke2fs -t ext3 /dev/sda2
 こちらはマウントされているファイルシステムの情報が格納されているファイル
 /etc/mtab
 /proc/self/mounts
+
+■gzip形式で圧縮したアーカイブファイル「test.tar.gz」をカレントディレクトリに展開したい
+fvxz
+tar fxz test.tar.gz
+tar fvxz test.tar.gz
+
+■「aa」「bb」「cc」の3ファイルを1つにまとめて「hoge.tar」というアーカイブにしたい。
+cf
+tar cf hoge.tar aa bb cc
