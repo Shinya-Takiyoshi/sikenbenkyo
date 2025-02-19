@@ -84,3 +84,16 @@ mkfsには二つ呼び出し方がある。
 mkfs /dev/hda1
 mkfs -t ext2 /dev/hda1
 
+■ext3ファイルシステムを「/dev/sda2」に作成したい。
+mkfsはext3もext2と同様の指定方法
+mkfs -t ext3 /dev/sda2
+mkfsには二つ呼び出し方がある。
+ext3からはオプションが必要(jt日本タバコ産業)
+mke2fs -j /dev/sda2
+mke2fs -t ext3 /dev/sda2
+■ファイルシステムのマウントの設定を行うファイル
+/etc/fstab　fileSystemのtabと覚えておく
+ーーーーーーー
+こちらはマウントされているファイルシステムの情報が格納されているファイル
+/etc/mtab
+/proc/self/mounts
