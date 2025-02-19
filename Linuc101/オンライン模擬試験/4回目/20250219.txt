@@ -1,0 +1,47 @@
+■viエディタを終了することなくカレントディレクトリにあるファイルを確認
+:!ls　コロンが先は命！
+■mkdirオプション
+アクセス権の付与：-m
+■ファイルを圧縮できるコマンド
+gzip <圧縮|展開> gunzip
+bzip2
+■gzipオプション
+rだけ圧縮と覚える。
+-d:展開
+-c:出力
+-r:再帰的に圧縮
+■.gzファイルを展開できるコマンド
+gunzip configure.gz
+gzip -d configure.gz
+■bzip2形式で圧縮
+bzip2 configure
+オプションはgzipと一緒(rは無い)
+-d:展開
+-c:出力
+■.bz2ファイルを展開できるコマンド
+bzip2 -d configure.bz2
+bunzip2 configure.bz2
+
+こう読みます
+gunzip > g unzip
+bunzip2 b unzip2
+unとついてるのでzipの反対です。つまり展開です。
+
+■bzip2形式で圧縮した「test.tar.bz2」というアーカイブにしたい
+tar cfjv test.tar.bz2 test
+tar cfj test.tar.bz2 test
+testディレクトリをtest.tar.bz2に圧縮する
+アーカイブ：cfjv
+
+■入出力のブロックサイズ(一度に読み書きするバイト数)を指定するddのオプション
+bs:blocksize
+
+■標準入力元をキーボードからファイルに切り替えるリダイレクト演算子
+標準入力元デフォルトはキーボード　>
+それを反対にするから　< が正しい。
+
+■「boot.img」というイメージファイルをUSB(ここでは/dev/sdcとする)にコピーしたい
+dd if=boot.img of=/dev/sdc
+ifとofで覚える。
+
+続き：38問目から開始。
