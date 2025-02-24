@@ -1,0 +1,30 @@
+■bzip2形式で圧縮した「test.tar.bz2」というアーカイブにしたい
+tar cfjv test.tar.bz2 test
+tar cfj test.tar.bz2 test
+c:アーカイブ作成
+f:ファイル名を指定
+j:bzip2を通しての展開/圧縮
+v:詳細情報表示
+
+コマンドの順
+tar アーカイブにしたいファイル名 元ディレクトリ
+tar cfjv test.tar.bz2 test
+アーカイブにしたいファイル名:test.tar.bz2
+元ディレクトリ:test
+
+■trコマンド
+数字:[:digit:]
+英数字:[:alnum:]
+
+■rmdirコマンド 再帰的削除
+rmdir -p dir/dir2
+pオプション
+
+■「configure」ファイルをgzip形式で「configure.gz」というファイルに圧縮したい。また、圧縮前の元ファイルも残したい
+gzip -c configure > configure.gz
+c:元ファイルを残して出力する
+
+
+26から続き
+
+
