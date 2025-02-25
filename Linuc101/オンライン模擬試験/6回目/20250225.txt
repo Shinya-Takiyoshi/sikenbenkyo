@@ -24,7 +24,19 @@ pオプション
 gzip -c configure > configure.gz
 c:元ファイルを残して出力する
 
+■「configure」ファイルをbzip2形式で「configure.bz2」というファイルに圧縮したい。また、圧縮前の元ファイルも残したい。
+bzip2 -c configure > configure.bz2
+bzipであっても同じcオプションで共通。
 
-26から続き
+■「hoge.tar」というアーカイブを展開したい。
+tar xf hoge.tar
+cはアーカイブ作成
+xはアーカイブを展開
 
+■親プロセスのPIDや実行優先度を決定するnice値なども併せて表示するpsコマンドのオプション
+-l
+l
+表示する=lなんだなあ
+
+31から続き
 
