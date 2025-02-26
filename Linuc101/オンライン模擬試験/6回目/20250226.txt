@@ -1,0 +1,75 @@
+■IDが1756のプロセスのみの情報を表示したい
+ps p 1756
+ps -p 1756
+プロセスのp
+
+■動作中のプロセスの親子関係をツリー状で表示するコマンド
+ps axf
+f:ツリー状で表示
+pstree
+
+■viエディタ 行番号が表示されていたが、行番号を非表示にしたい
+行番号表示する時のにnoをつけるだけ。
+:set nonu
+:set nonumber
+
+前提知識：
+:set nu
+:set number
+
+■viエディタでファイルを編集する際、タブの幅を10にしたい
+:set tabstop=10
+:set ts=10
+
+■viエディタのコマンドモードにおいて、カーソル位置の単語を削除するviコマンド
+dw
+■viエディタのコマンドモードにおいて、カーソル位置の単語をバッファにコピーするviコマンド
+yw
+
+■viエディタのコマンドモードにおいて、カーソル位置の左の文字を削除するviコマンド
+X
+
+■findコマンドでファイルを検索する際、検索結果を改行区切りで表示するアクション
+-print
+
+■findコマンドで検索したファイルに対してコマンドを
+-exec
+
+■「/etc/inittab」を設定ファイルとして使用しないinitプログラム
+・Upstart
+・systemd
+「/etc/inittab」を設定ファイルとして使用するinitプログラム
+・SysVinit
+
+■システムを今すぐ再起動させたい
+shutdown -r now
+systemctl reboot
+systemctlのもう一つの書き方を覚える。
+systemctl start reboot.target
+
+■シャットダウン処理を行わず、メッセージ通知のみを行うshutdownコマンド
+-k(多分シャットダウンを行わないという意味でkeep)
+
+■bzip2より圧縮率が高い圧縮形式
+xz
+■「test」ディレクトリをxz形式で圧縮した「test.tar.xz」というアーカイブにしたい
+tar cfJ test.tar.xz test
+cfは皆共通(アーカイブ作る鉄板)
+J大文字がxz専用
+
+■アーカイブファイル「test.tar.xz」をカレントディレクトリに展開したい。
+tar xvJf test.tar.xz
+tar xfJ test.tar.xz
+xが展開コマンドなのはわかっていたので、Jがxz専用かどうか見極める。
+
+■端末上で複数の仮想端末を開くことのできるプログラム
+screen
+tmux(two mixみたいな名前)
+
+■次世代のLinux標準ファイルシステム
+ ディレクトリの一部をサブボリュームとして個別のファイルシステムのように扱えるファイルシステム
+Btrfs(B-tree File System)(BTSみたいなやつ)
+
+■D-Busについて
+Linuxで使われるプロセス間通信機構
+D-Bus(Desktop Bus)
