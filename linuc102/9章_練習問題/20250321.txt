@@ -1,0 +1,14 @@
+■useradd
+useradd -d ディレクトリ -s シェル ユーザー名
+■groupadd
+addはグループ作成なので、既存グループの変更であればgroupmod
+■ホームディレクトリのデフォルトファイル
+/etc/skel
+■atコマンド
+denyにない場合は全ユーザー使える。
+allowとdenyにあるかどうかで制限変わる
+■日付などを規定する変数
+LC_TIME
+■ロケール
+local→ロケール
+iconv→文字コードの変換
