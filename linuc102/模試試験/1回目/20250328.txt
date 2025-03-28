@@ -1,0 +1,17 @@
+■ルーティングテーブルコマンド
+routeつくコマンド
+ip a show
+
+■DNS問い合わせコマンド
+・dig
+・host
+
+■DNSサーバーのipアドレスファイル指定
+/etc/resolv.conf
+resolveのeが要らない
+
+■usermod
+-G(大文字) グループ -d　ディレクトリ ユーザー
+
+■ユーザーの作成時のホームディレクトリ
+/etc/skel
