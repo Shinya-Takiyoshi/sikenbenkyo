@@ -1,0 +1,33 @@
+■一時的に利用しないユーザーに関して
+ロックするのが一番
+
+■cron　5分おきの設定
+0-59/5にすると
+0-59分の間で5分おきとなる。
+よって、1時間に5分ごとに起動することができる。
+
+■ユーザーのcrontabの設定ファイル
+/var/spool/cron/
+
+■atコマンドによって登録されたjobを解除する
+at -d
+at -r
+atrm
+
+■LANGの使い方
+LANG=C myapp
+myappの実行環境がC(英語環境)になる
+LANG=C;myapp
+途中でコロンつけるとLANGの設定はmyappにかからないた、え
+myappの環境はデフォルトのja.JP:utf-8になる
+
+■iconvコマンドの使い方
+iconv -f shitjis -t utf-8
+fが変換前
+tが変換後の文字コードである。
+
+■タイムゾーンの設定
+/etc/localtime
+
+
+
