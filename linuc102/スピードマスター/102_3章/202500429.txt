@@ -11,7 +11,7 @@ cron - cron
      - crond
 
 ■cronの設定の見方
-分 時　日　月　曜日　コマンド
+分 時　日　月　曜日　コマンド　6個のフィールド
 だんだん戻る→
 59 1  1   1  1-5 commond
 時間に24時が入ることは無い。
@@ -44,3 +44,15 @@ crontabと同じ仕組み。allowファイルとdenyファイルを用意する�
 　allowに記述されたユーザーがatを利用できる。
 /etc/at.deny：拒否ファイル
 　denyに記述されてないユーザーがatを利用できる。
+
+■anacronが実行するジョブを記述したファイル
+anacronはシステムの保守のためのコマンドを定期的に実行します。
+/etc/anacrontab
+
+■anacrontabで実行可能な時間帯を指定する変数
+START_HOURS_RANGE＝3-22
+これは暗記。
+
+■cnontabの設定を行うコマンド(オプション付き)
+crontab -e
+eはedit(編集)
