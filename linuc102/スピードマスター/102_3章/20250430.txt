@@ -1,0 +1,3 @@
+■crontabの設定
+crontab -e(editのe)
+コマンドはそのままだから斜に構えないように(cronとかcrondではない)
