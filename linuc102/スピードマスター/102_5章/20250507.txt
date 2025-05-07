@@ -28,3 +28,22 @@ httpサービス
 1.ACCEPTなどをする場合は-pオプション必須(パケットの指定)
 2.-Lは全てのフィルターチェインを表示する
 3.filterの後にINPUTなどのチェインの指定が必須。
+
+■firewallの使い方
+list-ports
+list-services
+add-service
+add-port 80/tcp
+■無いコマンド
+reset
+list-zones
+
+■sshで外部サーバへ接続する際に使用するオプションを編集するユーザの設定ファイル
+~/.ssh/config
+
+■sshが使用する認証キーを生成するコマンド
+ssh-keygen
+■sshクライアントがsshサーバーに接続するときにパスフレーズを入力することなくログインするために秘密鍵の管理を行うプログラム
+つまりsshの秘密鍵の管理
+ssh-agent
+
