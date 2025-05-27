@@ -1,0 +1,15 @@
+■#!/bin/bashの記述の意味
+インタプリタを/bin/bashに指定するということ。
+
+■ポート番号
+ssh 22 これ忘れる。
+smtp 25
+domain 53
+https 443
+
+■ホスト名とIPアドレスの表示
+getnet
+
+■sshのconfig周り
+ssh:ssh_config
+sshd:sshd_config
