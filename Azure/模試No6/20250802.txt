@@ -61,3 +61,17 @@ A.既存のAzure仮想マシンを起動できなくなりました。
 A.アプリケーションゲートウェイのメトリクス
 アプリケーションゲートウェイには、パフォーマンスに関するトラブルシューティングに使用できる13種類のメトリクスがあり、
 これを使用して、アプリケーションゲートウェイへのリクエスト総数とリクエスト失敗数を比較できる。
+
+■あなたの会社はexample.com用のパブリックDNSゾーンを有しています。
+さらにAzure環境にはMicrosoft Entraテナントexample2.comがあります。
+example.comをカスタムドメイン名として
+Microsoft Entraに追加するためには、どのタイプのDNSレコードを作成する必要がある？
+A.TXT
+カスタムドメインをMicrosoft Entraに参加させる設定にはTXTレコードタイプを作成する必要があります。
+
+■Azure portal でサポートされている課金アカウント
+Microsoft Online Services Program
+Microsoft Customer Agreement
+マイクロソフトエンタープライズ契約
+Microsoft Partner Agreement
+マイクロソフトついてるやつは全部。
