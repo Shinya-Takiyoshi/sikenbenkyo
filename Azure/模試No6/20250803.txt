@@ -29,3 +29,41 @@ A.いいえ
 ハイブリッドクラウドモデルは、パブリッククラウドモデルとプライベートクラウドモデルの両方を組み合わせて構成することができます。
 したがって、プライベートクラウドをAzure環境に移行する必要はありません。
 プライベートクラウド自体をAzureに強制させる必要はないということ。
+
+■オフィスのActive DirectoryをMicrosoft Entraと連携した後、
+Microsoft Entraの「消費者間 (B2C)」機能を使用してカスタマーを管理することができる。
+A.はい
+Microsoft Entra B2Cという機能がある。
+
+■MacOS、Linux、Ubuntu、Windows 10のオペレーティングシステムを備えた仮想マシン向けツールとして、
+Azure CLI、Azure Powershell、
+およびAzure Portalのすべてが利用可能である。
+A.はい
+Azure CLIおよびAzure Powershellもすべてのプラットフォームで利用できるように、
+専用のバージョンが提供されています。
+つまりサポートが手厚いと！
+
+■Azure Active DirectryのPremium P1には高度な ID 保護機能と
+Privileged Identity Management 機能も含まれる。
+A.いいえ
+Premium P2にはMicrosoft Entra Premium P21には高度な ID 保護機能と Privileged Identity Management 機能も含まれま
+が、Premium P1には含まれません。
+ポイント：P2からID 保護機能が含まれる
+
+■このアプリケーションはペタバイトのデータを格納することが必要であり、
+データ全体で複雑なクエリを実行することが必要となります。
+A.Azure Synapse
+Azure Synapseを使用してデータ全体で複雑なクエリを実行することができます。
+Azure Synapse は、データ ウェアハウスやビッグ データ システム全体にわたって分析情報を取得する時間を早める
+エンタープライズ分析サービスです。
+Synapseとは神経細胞のニューロンとニューロンをつなぐ結合部。
+つまり複雑ことできるよって印象をもつ。
+
+■あなたはAzureリソースの操作を実施しています。
+Azureリソースを操作するツールの説明として正しい内容
+正解が多いので不正解を覚える。
+不正解：Azure Cloud ShellにはAzurePowerShellからアクセスすることが必要である。
+Azure CloudShellはLinuxコンピューターのWebブラウザーからアクセスできます。
+よって、Azure Cloud ShellにはAzurePowerShellからアクセスする必要性は必ずしもありません。
+powershellみたいなやつなんだけど、クラウドで操作できるからコマンドラインだけが入口じゃないってことね。
+https://qiita.com/ume67026265/items/3c411b1f73cd1e5ff6c4
