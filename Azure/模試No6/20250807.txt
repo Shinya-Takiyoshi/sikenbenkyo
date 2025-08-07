@@ -1,0 +1,16 @@
+■リソースグループにタグを割り当てると、そのリソースグループ内にあるAzureリソースには同じタグに割り当てられる。
+A.いいえ
+タグは継承されません。
+タグはあくまでもリソースを個別に識別する際に利用する名札として機能しているためです。
+
+■あなたはAzureを利用してアプリケーションを構築していますが、
+バックエンドからプッシュ通知を送信するための実装が必要。
+最適なソリューションは？
+A.Azure Notification Hubs
+Azure Notification Hubs は、iOS、Android、Windows、Kindle のデバイスに数百万件の通知をすばやく送信したり、
+APNs (Apple Push Notification Service)、GCM (Google Cloud Messaging)、
+WNS (Windows プッシュ通知サービス) などを操作することができます。
+
+■Microsoft Entraを利用して、ユーザーの既存の資格情報を使用したシングルサインオンを可能にする必要がある。
+それを実施するためには、必要な権限タイプは？
+A.アプリ開発者
