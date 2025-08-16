@@ -1,0 +1,28 @@
+■有償の Azure サービスのSLA稼働率は少なくとも 99.9% である。
+ A.いいえ
+ Standard SSD Managed Disks を使用する単一インスタンス仮想マシンについては、
+ マイクロソフトは 99.5% 以上の時間において仮想マシン接続が確保されることを保証します。
+
+■Enterprise Agreement (EA) は予測された一定の金額を先に支払う購入方式である。
+ A.はい
+ Enterprise Agreement は3 年以上のソフトウェアおよびクラウド
+ サービスのライセンスの利用を希望するユーザー向けに設計されており、
+ 3年分の予測利用料金をあらかじめ支払う必要があります。
+ それによって、Enterprise Agreement では、15% ～ 45% のコスト削減が可能です。
+
+■Premium SSDを使用した単一の仮想マシンのSLAはどれ
+ A.99.9%
+
+■Standard SSD Managed Disks を使用する単一インスタンス仮想マシンのSLAはどれ
+A.99.5%
+
+■ページ BLOBのみをサポートするストレージアカウントはPremium BLOB共有である
+A.いいえ
+ページ BLOBのみをサポートするストレージアカウントはPremium ページBLOBです。
+
+Premium BLOB共有ではなく、Premium ページBLOBというページがつくものが正しい。
+
+■読み取りアクセス geo 冗長ストレージ (RA-GRS)と読み取りアクセス
+geo ゾーン冗長ストレージ (RA-GZRS) が利用できるストレージアカウントはどれ
+A.Standard 汎用 v2
+ポイント：geoはv2と思えば良い。

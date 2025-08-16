@@ -49,6 +49,3 @@ Azure Functions
 
 関数コードをカスタム Linux コンテナーにデプロイするには、
 Premium プランまたは専用 (App Service) プランのホスティングが必要です。
-
-
-問題94から続き
